@@ -8,8 +8,6 @@
 
 插件安装并激活后，在 **插件 → 已安装插件 → WEM Bottom Banner Ads → 设置** 中即可进入管理界面；也可以通过 **设置 → WEM Banner Ads** 打开。
 
-> 后台截图文件已准备好；将 `docs/screenshots/admin-settings.png` 上传到仓库后，下面的图片会自动显示。
-
 ![WEM Bottom Banner Ads 后台设置界面](docs/screenshots/admin-settings.png)
 
 ## 应用场景
