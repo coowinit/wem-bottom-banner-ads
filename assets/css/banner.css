@@ -1,0 +1,43 @@
+/* WEM Bottom Banner Ads — v1.0.0 */
+.wem-bba-banner {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    width: 100%;
+    max-width: 1200px;
+    height: auto;
+    z-index: 1000;
+    transform: translateX(-50%);
+    animation: wem-bba-slide-in .6s ease-out both;
+}
+.wem-bba-banner[hidden] { display: none !important; }
+.wem-bba-banner__link, .wem-bba-banner picture { display: block; }
+.wem-bba-banner__link img { width: 100%; height: auto; display: block; }
+.wem-bba-banner__close {
+    position: absolute;
+    right: 15px;
+    top: -30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    padding: 0;
+    border: 0;
+    background: transparent;
+    cursor: pointer;
+    z-index: 1;
+}
+.wem-bba-banner__close img { display: block; width: 30px; height: 30px; }
+.wem-bba-banner__close:focus-visible { outline: 2px solid #175cd3; outline-offset: 2px; }
+@keyframes wem-bba-slide-in {
+    from { transform: translate(-50%, 100%); }
+    to { transform: translate(-50%, 0); }
+}
+@media (max-width: 640px) {
+    .wem-bba-banner { bottom: calc(20px + env(safe-area-inset-bottom, 0px)); }
+    .wem-bba-banner__close { right: 10px; width: 36px; height: 36px; top: -36px; }
+}
+@media (prefers-reduced-motion: reduce) {
+    .wem-bba-banner { animation: none; }
+}
