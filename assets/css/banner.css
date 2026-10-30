@@ -1,4 +1,4 @@
-/* WEM Bottom Banner Ads — v1.0.0 */
+/* WEM Bottom Banner Ads */
 .wem-bba-banner {
     position: fixed;
     bottom: 20px;
@@ -8,8 +8,10 @@
     height: auto;
     z-index: 1000;
     transform: translateX(-50%);
+    visibility: hidden;
     animation: wem-bba-slide-in .6s ease-out both;
 }
+.wem-bba-banner.is-ready { visibility: visible; }
 .wem-bba-banner[hidden] { display: none !important; }
 .wem-bba-banner__link, .wem-bba-banner picture { display: block; }
 .wem-bba-banner__link img { width: 100%; height: auto; display: block; }
