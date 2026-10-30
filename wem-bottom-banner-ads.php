@@ -2,7 +2,7 @@
 /**
  * Plugin Name: WEM Bottom Banner Ads
  * Description: 轻量级底部响应式横幅广告，支持首页显示、PC/移动端图片、后台开关及关闭状态记忆。
- * Version: 1.0.3
+ * Version: 1.0.4
  * Requires at least: 6.0
  * Requires PHP: 7.4
  * Author: WEM
@@ -11,7 +11,7 @@
 
 if ( ! defined( 'ABSPATH' ) ) { exit; }
 
-define( 'WEM_BBA_VERSION', '1.0.3' );
+define( 'WEM_BBA_VERSION', '1.0.4' );
 define( 'WEM_BBA_PATH', plugin_dir_path( __FILE__ ) );
 define( 'WEM_BBA_URL', plugin_dir_url( __FILE__ ) );
 
